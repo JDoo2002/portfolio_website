@@ -11,6 +11,7 @@
     float: right;
     background-color: white;
     color: #050f0b;
+    transition: all 0.3s ease;
   }
 
   button:hover {
@@ -18,31 +19,90 @@
     color: white;
   }
 
-  fieldset {
-    background-color: white;
+  /* Common styles for all modes */
+  .MuiOutlinedInput-root {
+    transition: all 0.3s ease;
   }
-}
 
-label {
-  font-size: 1.2rem;
-  font-family: 'DomaineDispNar-Medium', sans-serif;
-}
+  .MuiOutlinedInput-root:hover fieldset {
+    border-color: #5000ca; /* Hover border color */
+  }
 
-.form-flex {
-  display: flex;
-  gap: 15px;
-  padding-bottom: 15px;
-}
+  .MuiOutlinedInput-root.Mui-focused fieldset {
+    border-color: #5000ca; /* Focused border color */
+  }
 
-.form-flex .MuiFormControl-root {
-  width: 100%;
-}
+  .form-flex {
+    display: flex;
+    gap: 15px;
+    padding-bottom: 15px;
+  }
 
-form {
-  width: 100% !important;
-}
+  .form-flex .MuiFormControl-root {
+    width: 100%;
+  }
 
-.body-form {
-  width: 100% !important;
-  margin-bottom: 15px !important;
+  form {
+    width: 100%;
+  }
+
+  .body-form {
+    width: 100%;
+    margin-bottom: 15px;
+    resize: vertical; /* Allow vertical resizing */
+  }
+
+  .success-message {
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: color 0.3s ease;
+  }
+
+  /* Light mode styles */
+  &.light {
+    .MuiInputLabel-root {
+      color: #333; /* Label text color */
+    }
+
+    .MuiOutlinedInput-root {
+      color: #050f0b; /* Input text color */
+      background-color: white; /* Input background */
+    }
+
+    .MuiOutlinedInput-root:hover fieldset {
+      border-color: #5000ca; /* Border hover color */
+    }
+
+    .MuiOutlinedInput-root.Mui-focused fieldset {
+      border-color: #5000ca; /* Focused border color */
+    }
+
+    .success-message {
+      color: green; /* Success message for light mode */
+    }
+  }
+
+  /* Dark mode styles */
+  &.dark {
+    .MuiInputLabel-root {
+      color: #bbb; /* Label text color for dark mode */
+    }
+
+    .MuiOutlinedInput-root {
+      color: white; /* Input text color for dark mode */
+      background-color: #333; /* Input background for dark mode */
+    }
+
+    .MuiOutlinedInput-root:hover fieldset {
+      border-color: #a86ff2; /* Border hover color */
+    }
+
+    .MuiOutlinedInput-root.Mui-focused fieldset {
+      border-color: #a86ff2; /* Focused border color */
+    }
+
+    .success-message {
+      color: #86e57f; /* Success message for dark mode */
+    }
+  }
 }
