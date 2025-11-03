@@ -74,7 +74,7 @@ function Contact({ mode }: { mode: "light" | "dark" }) {
             <div className="items-container">
                 <div className="contact_wrapper">
                     <h1>Contact Me</h1>
-                    <p>Get in touch—I’d be excited to explore opportunities with you!!</p>
+                    <p>Get in touch - I’d be excited to explore opportunities with you!</p>
                     <Box
                         component="form"
                         noValidate

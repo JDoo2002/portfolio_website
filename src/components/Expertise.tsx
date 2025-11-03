@@ -49,7 +49,7 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faReact} size="3x"/>
                     <h3>Full Stack Web Development</h3>
-                    <p>I have experience developing and maintaining web applications using React, TypeScript, and JavaScript. I’m comfortable working with backend services and APIs, particularly with Node.js and PostgreSQL, to ensure seamless data handling and performance.</p>
+                    <p>I design and deliver internal products-APIs, dashboards, and workflows that make diagnosing and fixing issues faster and more consistent. On the front end I work in React and TypeScript (often Next.js) with a focus on clear, minimal UIs. on the back end I ship Python/Flask or Node when it fits, with sensible auth, logging, and error handling. I use MariaDB/PostgreSQL and validate data with payload diffing and lightweight checks. The goal is always the same: turn a one-off deep dive into a repeatable solution that teams actually use.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsFirst.map((label, index) => (
@@ -61,7 +61,7 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faDocker} size="3x"/>
                     <h3>DevOps & Automation</h3>
-                    <p>I’ve worked on cloud infrastructure, automation, and deployment pipelines. I’m proficient in using AWS services, creating infrastructure with Terraform, and automating deployments through GitHub Actions for CI/CD.</p>
+                    <p>I keep these tools easy to ship and reliable in production. That means AWS S3 for artefacts and configs, CloudWatch for tracing and verification, and GitHub Actions for straightforward CI/CD. I use Terraform to make environments predictable and add health checks, scheduled tasks, and structured logs so issues are visible before they become incidents. Releases are simple, documented, and designed to reduce noise.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsSecond.map((label, index) => (
@@ -73,7 +73,7 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faPython} size="3x"/>
                     <h3>IT Support & Technical Operations</h3>
-                    <p>I specialize in debugging and resolving complex technical issues within a SaaS environment, providing advanced L1 and L2 support for platform performance, user configurations, and system reliability. I leverage tools like Jira and Zendesk to diagnose root causes, streamline incident management, and implement solutions that improve platform efficiency and user satisfaction. My role also involves collaborating with cross-functional teams to proactively address recurring issues and optimize workflows.</p>
+                    <p>I lead the escalation path for complex issues across POS and ordering integrations. Day to day I guide consultants through investigations, step in on priority cases, and coordinate with Dev/Infra when needed. I rely heavily on SQL/MariaDB to verify the numbers, read/write to S3 for artefacts and configs, and use CloudWatch to trace errors and confirm fixes.I document well-scoped bugs, maintain step-by-step guides, and package repeatable solutions so similar issues are resolved quickly.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsThird.map((label, index) => (

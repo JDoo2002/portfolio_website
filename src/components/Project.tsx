@@ -12,7 +12,7 @@ function Project({ mode }: { mode: string }) {
             description:
                 "Automates AWS cost tracking & security monitoring using Terraform, Lambda, and QuickSight. Collects real-time data, visualizes trends, and sends email alerts for high spending.",
             image: mock01,
-            link: "https://web-production-589c.up.railway.app/dashboard",
+            link: "https://github.com/JDoo2002/AWS-Cost-Monitoring",
             tags: ["#lambda", "#Terraform", "#S3", "#Cost Explorer API", "#SES", "#Flask", "#Jinja2", "#Bootstrap", "#Python", "#Railway"],
         },
         {
@@ -33,6 +33,15 @@ function Project({ mode }: { mode: string }) {
             link: "https://github.com/JDoo2002/CI_Process_For_Application",
             tags: ["#Node.js", "#Express.js", "#MongoDB", "#EJS", "#Github Actions", "#NPM"],
             access: "Private",
+        },
+        
+        {
+            title: "AI Resume Analyzer with Fit Score & Future Path",
+            description:
+                "Turn a resume into actionable career advice: Upload your resume and recieve, job recommendations with a 0–100 Fit Score, and a staged Future Path plan.",
+            image: mock04,
+            link: "https://github.com/JDoo2002/Ai_analyzer/tree/main",
+            tags: ["#Ai", "#Nextjs", "#React", "#Typescript", "#tailwindcss", "#openai", "#vite", "#vercel", "#Python", "#HTML"],
         },
         
         {
